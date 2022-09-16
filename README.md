@@ -11,5 +11,5 @@ $ ./dump_mlx_periodic.sh 1 mlx5_2
 2022年 2月 19日 土曜日 08:34:28 GMT: recv_data=29166371, recv_packets=127388, xmit_data=29066583, xmit_packets=122254
 
 # BM.HPC2.36 の場合
-$ ./dump_mlx_periodic.sh 1 mlx5_1
+$ ./dump_mlx_periodic.sh 1 mlx5_0
 ```
