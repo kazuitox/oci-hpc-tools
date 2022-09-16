@@ -13,3 +13,10 @@ $ ./dump_mlx_periodic.sh 1 mlx5_2
 # BM.HPC2.36 の場合
 $ ./dump_mlx_periodic.sh 1 mlx5_0
 ```
+
+指定するデバイスについては以下のコマンドでご確認ください。
+```
+$ ibdev2netdev
+mlx5_0 port 1 ==> enp94s0f0 (Up)
+mlx5_1 port 1 ==> enp94s0f1 (Down)
+```
