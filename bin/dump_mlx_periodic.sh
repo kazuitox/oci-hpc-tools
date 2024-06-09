@@ -6,8 +6,8 @@ then
 else
 	MLX_DEV=mlx5_0
 fi
-DEV_PORT=`ibdev2netdev | grep $MLX_DEV | awk '{ print $3; }'`
-ETH_DEV=`ibdev2netdev | grep $MLX_DEV | awk '{ print $5; }'`
+DEV_PORT=`ibdev2netdev | grep "${MLX_DEV} " | awk '{ print $3; }'`
+ETH_DEV=`ibdev2netdev | grep "${MLX_DEV} " | awk '{ print $5; }'`
 #echo MLX_DEV=$MLX_DEV, DEV_PORT=$DEV_PORT, ETH_DEV=$ETH_DEV
 sw_path=/sys/class/infiniband/$MLX_DEV/ports/$DEV_PORT/counters
 #echo sw_path=$sw_path
